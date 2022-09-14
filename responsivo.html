@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórum 1 – Desenvolvimento Responsivo</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            outline: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+
+        body {
+            height: 100%;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            border: 0px solid black;
+        }
+
+        .card {
+            text-align: center;
+            font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-size: 15rem;
+            color: #6e6e6e;
+            font-weight: bold;
+        }
+
+        .retanguloRoxo {
+            float: left;
+            border: 0px solid black;
+            background-color: #E1BEE7;
+            width: 22%;
+            height: 80%;
+            margin-left: 2%;
+            margin-top: 2%;
+        }
+
+        .retanguloVermelho {
+            float: left;
+            border: 0px solid black;
+            background-color: #EF9A9A;
+            width: 22%;
+            height: 80%;
+            margin-left: 2%;
+            margin-top: 2%;
+        }
+
+        .retanguloAmarelo {
+            float: left;
+            border: 0px solid black;
+            background-color: #FFF59D;
+            width: 22%;
+            height: 80%;
+            margin-left: 2%;
+            margin-top: 2%;
+        }
+
+        .retanguloVerde {
+            float: left;
+            border: 0px solid black;
+            background-color: #A5D6A7;
+            width: 22%;
+            height: 80%;
+            margin-left: 2%;
+            margin-top: 2%;
+        }
+
+        /*Mobile*/
+
+        @media only screen and (min-width: 0px) and (max-width: 480px) {
+
+            .retanguloRoxo,
+            .retanguloVermelho,
+            .retanguloAmarelo,
+            .retanguloVerde {
+                width: 95%;
+                height: 47vh;
+            }
+
+        }
+
+        /* TABLET*/
+
+        @media only screen and (min-width: 481px) and (max-width: 768px) {
+
+            .retanguloRoxo,
+            .retanguloVermelho,
+            .retanguloAmarelo,
+            .retanguloVerde {
+                width: 45vw;
+                height: 40vh;
+            }
+
+        }
+
+        /* WEB */
+
+        @media only screen and (min-width: 769px) {}
+    </style>
+
+    <div class="container">
+
+        <div class="retanguloRoxo">
+            <label class="card">
+                <center>1</center>
+            </label>
+        </div>
+
+        <div class="retanguloVermelho">
+            <label class="card">
+                <center>2</center>
+            </label>
+        </div>
+
+        <div class="retanguloAmarelo">
+            <label class="card">
+                <center>3</center>
+            </label>
+        </div>
+
+        <div class="retanguloVerde">
+            <label class="card">
+                <center>4</center>
+            </label>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
